@@ -19,7 +19,7 @@ const production = {
     MYSQL: {
         host: "localhost",
         user: "root",
-        password: "abcd",
+        password: "l123456",
         port: "3306",
         database: "nodesample",
         supportBigNumbers: true,
@@ -47,14 +47,23 @@ const development = {
     MYSQL: {
         host: "localhost",
         user: "root",
-        password: "abcd",
+        password: "l123456",
         port: "3306",
         database: "nodesample",
         supportBigNumbers: true,
         multipleStatements: true,
         timezone: 'utc'
-    }
+    },
 
+    // jwt验证
+    jwt_secret: 'ddff0a63e06816ddd7b7d2e2ebc1e40205',
+
+    // 微信
+    wx: {
+        appId: '',
+        appSecret: '',
+        loginUrl: 'https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code'
+    }
 }
 
 const config = development

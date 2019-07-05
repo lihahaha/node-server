@@ -42,23 +42,22 @@ const development = {
         password: "lj123456",
         maxAge: 3600000
     },
-
-    //MYSQL数据库配置
-    MYSQL: {
-        host: "localhost",
-        user: "root",
-        password: "l123456",
-        port: "3306",
-        database: "nodesample",
-        supportBigNumbers: true,
-        multipleStatements: true,
-        timezone: 'utc'
+    // 环境
+    environment: 'dev',
+    // MYSQL
+    database: {
+        dbName: 'mysql',
+        host: 'localhost',
+        port: 3306,
+        user: 'root',
+        password: 'l123456'
     },
-
-    // jwt验证
-    jwt_secret: 'ddff0a63e06816ddd7b7d2e2ebc1e40205',
-
-    // 微信
+    // jwt
+    security: {
+        secretKey: "secretKey",
+        // 过期时间 1小时
+        expiresIn: 60 * 60
+    },
     wx: {
         appId: '',
         appSecret: '',

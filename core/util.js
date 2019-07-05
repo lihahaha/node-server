@@ -1,7 +1,7 @@
-const jwt = require('jsonwebtoken')
 /***
  *
  */
+const jwt = require('jsonwebtoken')
 const findMembers = function (instance, {
     prefix,
     specifiedType,

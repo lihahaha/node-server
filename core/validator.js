@@ -180,6 +180,7 @@ class RuleResult {
 class RuleFieldResult extends RuleResult {
     constructor(pass, msg = '', legalValue = null) {
         super(pass, msg)
+        console.log(legalValue)
         this.legalValue = legalValue
     }
 }
@@ -206,6 +207,7 @@ class Rule {
 class RuleField {
     constructor(rules) {
         this.rules = rules
+        console.log(rules)
     }
 
     validate(field) {
@@ -222,7 +224,9 @@ class RuleField {
 
         const filedResult = new RuleFieldResult(false)
         for (let rule of this.rules) {
+            console.log('---------',rule)
             let result = rule.validate(field)
+            console.log(result)
             if (!result.pass) {
                 filedResult.msg = result.msg
                 filedResult.legalValue = null

@@ -19,4 +19,4 @@ COPY . /usr/src/node-server/
 
 
 EXPOSE 3000
-CMD git pull && npm start
+CMD node app.js

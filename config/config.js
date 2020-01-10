@@ -21,7 +21,7 @@ const production = {
         user: "my_user",
         password: "my_pw",
         port: "3306",
-        database: "my_data",
+        database: "mysql",
         supportBigNumbers: true,
         multipleStatements: true,
         timezone: 'utc'
@@ -46,6 +46,7 @@ const development = {
     environment: 'dev',
     // MYSQL
     database: {
+        dbName: "my_data",
         host: "localhost",
         user: "my_user",
         password: "my_pw",

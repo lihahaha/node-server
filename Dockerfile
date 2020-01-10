@@ -18,4 +18,4 @@ COPY . /usr/src/node-server/
 
 
 EXPOSE 3000
-CMD npm prd
+CMD npm run prd

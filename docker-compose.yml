@@ -27,9 +27,9 @@ services:
   app:
     build: ./
     volumes:
-      - ./:/usr/local/app
+      - ./:/usr/src/node-server/
     restart: always
-    working_dir: /usr/local/app
+    working_dir: /usr/src/node-server/
     ports:
       - 3000:3000
     command: npm run prd

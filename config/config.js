@@ -33,7 +33,7 @@ const production = {
 const development = {
 
     //服务器端口
-    SERVER_PORT : 3002,
+    SERVER_PORT : 3000,
 
     //REDIS配置
     REDIS: {

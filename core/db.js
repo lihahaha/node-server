@@ -14,6 +14,9 @@ const sequelize = new Sequelize(dbName, user, password, {
     port,
     logging: true,
     timezone: '+08:00',
+    dialectOptions: {
+        socketPath: '/tmp/mysql.sock' // 指定套接字文件路径
+    },
     define: {
         // create_time && update_time
         timestamps: true,

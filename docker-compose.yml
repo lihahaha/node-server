@@ -28,11 +28,12 @@ services:
     build: ./
     volumes:
       - ./:/usr/src/node-server/
+      - /usr/src/node-server/node_modules
     restart: always
     working_dir: /usr/src/node-server/
     ports:
       - 3000:3000
-    command: npm i && npm start
+    command: npm start
     depends_on:
       - redis-server
       - db

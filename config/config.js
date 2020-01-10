@@ -46,11 +46,14 @@ const development = {
     environment: 'dev',
     // MYSQL
     database: {
-        dbName: 'mysql',
-        host: 'localhost',
-        port: 3306,
-        user: 'root',
-        password: 'lj123456'
+        host: "localhost",
+        user: "my_user",
+        password: "my_pw",
+        port: "3306",
+        database: "my_data",
+        supportBigNumbers: true,
+        multipleStatements: true,
+        timezone: 'utc'
     },
     // jwt
     security: {

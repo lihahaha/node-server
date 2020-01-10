@@ -32,7 +32,7 @@ services:
     working_dir: /usr/src/node-server/
     ports:
       - 3000:3000
-    command: npm start
+    # command: npm start
     depends_on:
       - redis-server
       - db

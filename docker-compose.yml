@@ -41,9 +41,9 @@ services:
     environment:
       NODE_ENV: development
       PORT: 3000
-      DB_USERNAME: rssmonster
-      DB_PASSWORD: password
-      DB_DATABASE: rssmonster
+      DB_USERNAME: my_user
+      DB_PASSWORD: my_pw
+      DB_DATABASE: my_data
       DB_HOSTNAME: db
     command: npm start
     depends_on:

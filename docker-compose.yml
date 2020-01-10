@@ -38,10 +38,17 @@ services:
     working_dir: /usr/src/node-server/
     ports:
       - 3000:3000
+    environment:
+      - NODE_ENV: development
+      - PORT: 3000
+      - DB_USERNAME: my_user
+      - DB_PASSWORD: my_pw
+      - DB_DATABASE: my_data
+      - DB_HOSTNAME: db
     command: npm start
     depends_on:
       - redis-server
       - db
     links:
-      - redis-server:rd
-      - db:rd
+      - redis-server:redis-server
+      - db:db

@@ -47,7 +47,7 @@ const development = {
     // MYSQL
     database: {
         dbName: "my_data",
-        host: "localhost",
+        host: "95.169.17.252",
         user: "my_user",
         password: "my_pw",
         port: "3306",

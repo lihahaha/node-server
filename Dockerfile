@@ -11,8 +11,7 @@ WORKDIR /usr/src/node-server/
 COPY package.json /usr/src/node-server/package.json
 RUN cd /usr/src/node-server/
 RUN npm config set registry https://registry.npm.taobao.org
-RUN npm install cnpm -g --registry=https://registry.npm.taobao.org
-RUN cnpm i
+RUN npm install
 
 # 把当前目录下的所有文件拷贝到 Image 的 /usr/src/node-server/ 目录下
 COPY . /usr/src/node-server/

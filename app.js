@@ -48,7 +48,9 @@ app.use(cors());
 app.use(catchError)
 app.use(parser())
 InitManager.initCore(app)
-
+app.get('/', function (req, res) { 
+    res.send('Helloworld\n');
+});
 app.listen(config.SERVER_PORT, () => {
     console.log(`Starting at port ${config.SERVER_PORT}!`)
 });

@@ -18,10 +18,10 @@ const production = {
     //MYSQL数据库配置
     MYSQL: {
         host: "localhost",
-        user: "root",
-        password: "l123456",
+        user: "my_user",
+        password: "my_pw",
         port: "3306",
-        database: "nodesample",
+        database: "my_data",
         supportBigNumbers: true,
         multipleStatements: true,
         timezone: 'utc'

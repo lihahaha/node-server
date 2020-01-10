@@ -31,8 +31,8 @@ services:
     restart: always
     working_dir: /usr/local/app
     ports:
-      - 8090:8090
-    command: npm start
+      - 3000:3000
+    command: npm run prd
     depends_on:
       - redis-server
       - db
